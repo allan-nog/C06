@@ -55,5 +55,7 @@ public class App {
         String nome = teclado.nextLine();
 
         System.out.printf("%d anos, %.2fm de altura, %s \n", idade3, altura, nome);
+
+        teclado.close();
     }
 }
