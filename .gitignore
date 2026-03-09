@@ -1,0 +1,31 @@
+# =========================
+# Java compilado
+# =========================
+*.class
+
+# Arquivos de build
+*.jar
+*.war
+*.ear
+
+# Pastas de build
+bin/
+build/
+out/
+target/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# Sistema operacional
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
