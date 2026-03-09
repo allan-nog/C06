@@ -2,7 +2,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         double pi = 3.1415;
         int piInteiro = (int) pi;
         System.out.println(pi);
