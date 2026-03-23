@@ -1,18 +1,21 @@
 public class Main {
     public static void main(String[] args) {
         Conta conta = new Conta();
+        Cliente cliente = new Cliente();
 
-        conta.saldo = 700;
-        conta.numeroConta = 1234;
-        conta.limite = 400;
-        conta.nomeDono = "Allan";
+        cliente.nome = "Sarah";
+        cliente.cpf = "123.456.789-10";
+        cliente.endereco = "Rua 1";
 
-        System.out.println("Na conta de " + conta.nomeDono + " numero " +  conta.numeroConta + " tem R$" + conta.saldo);
+        conta.saldo = 1000;
+        conta.titular = cliente;
 
-        conta.deposito(1000);
-        System.out.println("Na conta de " + conta.nomeDono + " numero " +  conta.numeroConta + " tem R$" + conta.saldo);
+        System.out.println(conta.titular.nome);
+        System.out.println(cliente.nome);
 
-        conta.saque(500);
-        System.out.println("Na conta de " + conta.nomeDono + " numero " +  conta.numeroConta + " tem R$" + conta.saldo);
+        System.out.println("Cliente " + conta.titular.nome + " possui R$" + conta.saldo );
+
+        Empresa empresa = new Empresa();
+
     }
 }
